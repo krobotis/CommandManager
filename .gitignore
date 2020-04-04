@@ -338,3 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/CMakeSettings.json
+
+# Visual Studio 19 build folder
+out

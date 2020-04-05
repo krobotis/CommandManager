@@ -8,3 +8,7 @@ target_link_libraries(sampleApp PRIVATE
 	Logger
 	CommandManager
 )
+
+IF (NOT WIN32)
+  target_link_libraries(sampleApp PRIVATE pthread)
+ENDIF()

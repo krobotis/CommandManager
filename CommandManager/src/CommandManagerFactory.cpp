@@ -1,6 +1,6 @@
-#include <commandManager/CommandManagerFactory.h>
-#include <commandManager/ICommandManager.h>
-#include <commandManager/ICommandRegister.h>
+#include <commandmanager/CommandManagerFactory.h>
+#include <commandmanager/ICommandManager.h>
+#include <commandmanager/ICommandRegister.h>
 #include "CommandManager.h"
 #include "FileWatcher.h"
 

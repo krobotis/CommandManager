@@ -1,7 +1,7 @@
 #ifndef COMMANDMANAGER_H
 #define COMMANDMANAGER_H
 
-#include <commandManager/ICommandManager.h>
+#include <commandmanager/ICommandManager.h>
 
 #include <memory>    // for std::shared_ptr
 

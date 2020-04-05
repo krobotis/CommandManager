@@ -31,4 +31,8 @@ target_link_libraries(CommandManager PRIVATE
     Logger
 )
 
+IF (NOT WIN32)
+  target_link_libraries(CommandManager PRIVATE pthread)
+ENDIF()
+
 target_compile_definitions(CommandManager PRIVATE ENABLE_SINGLETON_COMMANDMANAGER=true)

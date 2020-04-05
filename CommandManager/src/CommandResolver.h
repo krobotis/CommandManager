@@ -1,7 +1,7 @@
 #ifndef COMMANDRESOLVER_H
 #define COMMANDRESOLVER_H
 
-#include <commandManager/ICommandRegister.h>
+#include <commandmanager/ICommandRegister.h>
 #include "ICommandListener.h"
 
 #include <string>

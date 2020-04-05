@@ -15,7 +15,7 @@ using namespace commandmanager;
 
 void foo(const std::string& name, ICommandRegister& reg)
 {
-	std::atomic_bool shutdown = false;
+    std::atomic_bool shutdown(false);
 	Logger logger(name);
 
 	logger << LogLevel::Info << "Starting\n";
@@ -61,6 +61,9 @@ int main()
 	std::thread t3(&foo, "thread3", std::ref(commandManager->getCommandRegister()));
 	std::thread t4(&foo, "thread4", std::ref(commandManager->getCommandRegister()));
 	std::thread t5(&foo, "thread5", std::ref(commandManager->getCommandRegister()));
+
+    Logger logger("main.func");
+    logger << LogLevel::Info << "Input \"exit\" to file \"commands\" to shutdown" << std::endl;
 
 	foo("main.func", std::ref(CommandManagerFactory::getInstance()->getCommandRegister()));
 
